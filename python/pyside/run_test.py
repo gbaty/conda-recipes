@@ -14,7 +14,7 @@ import PySide.QtWebKit
 import PySide.QtXml
 import PySide.QtXmlPatterns
 
-import sys
-if sys.platform != 'linux2':
+import platform
+if platform.system() != 'Linux':
     import PySide.QtOpenGL
     import PySide.phonon
